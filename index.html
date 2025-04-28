@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini CTF Junior</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mini CTF - Challenge Junior</h1>
+    <p>Tu penses être prêt pour résoudre ce CTF ? Let's go !</p>
+
+    <div class="challenge">
+      <h2>Défi 1 - Trouve le flag caché</h2>
+      <p id="hint">Indice : Cherche dans le code source pour découvrir le flag !</p>
+      <input type="text" id="flag1" placeholder="Entre le flag ici">
+      <button onclick="checkFlag1()">Valider</button>
+      <p id="response1"></p>
+    </div>
+
+    <div class="challenge">
+      <h2>Défi 2 - Décode le flag en base64</h2>
+      <p id="hint2">Indice : Le flag est caché en base64 dans un fichier JavaScript.</p>
+      <input type="text" id="flag2" placeholder="Entre le flag ici">
+      <button onclick="checkFlag2()">Valider</button>
+      <p id="response2"></p>
+    </div>
+
+    <div class="challenge">
+      <h2>Défi 3 - Cookie flag</h2>
+      <p id="hint3">Indice : Cherche dans les cookies de ton navigateur.</p>
+      <input type="text" id="flag3" placeholder="Entre le flag ici">
+      <button onclick="checkFlag3()">Valider</button>
+      <p id="response3"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
