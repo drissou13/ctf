@@ -5,6 +5,8 @@ function checkFlag1() {
   
   if (userFlag === correctFlag) {
     document.getElementById('response1').innerText = '✅ Flag trouvé !';
+    // Une fois le défi 1 réussi, afficher le défi 2
+    document.getElementById('challenge2').style.display = 'block';
   } else {
     document.getElementById('response1').innerText = '❌ Mauvais flag, essaie encore.';
   }
@@ -18,6 +20,8 @@ function checkFlag2() {
 
   if (userFlag === decodedFlag) {
     document.getElementById('response2').innerText = '✅ Flag décodé !';
+    // Une fois le défi 2 réussi, afficher le défi 3
+    document.getElementById('challenge3').style.display = 'block';
   } else {
     document.getElementById('response2').innerText = '❌ Mauvais flag, essaie encore.';
   }
